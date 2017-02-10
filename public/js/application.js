@@ -17,6 +17,7 @@ var good_reads = function() {
 		})		
 		.done(function(res){
 			$link.append(res);
+			$link.val('');
 		})
 	})
 

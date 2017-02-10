@@ -3,8 +3,8 @@ passing in each item in the pipes. got around it by using .index. since each lis
 number of results, i could use .length.times to display them as a group. -->
 
 <% @book_names.length.times do |index| %>
-	<ul>
-	<li class="no_bullet"><img src="<%= @book_names[index] %>"></li>
+	<ul class="no_bullet">
+	<li><img src="<%= @book_names[index] %>"></li>
 	<li><%= @book_titles[index] %></li>
 	<li><%= @book_authors[index] %></a></li>
 	</ul>

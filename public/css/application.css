@@ -1,3 +1,7 @@
+body {
+    background-image: url("/images/book.jpg");
+}
+
 header{
 	background-color: yellow;
 	height:50px;
@@ -34,4 +38,15 @@ nav li a:hover{
 
 .no_bullet {
 	list-style-type: none;
+	/*background-color: grey;*/
+	font-size: 2em;
+}
+
+h1 {
+	font-family: "Helvetica";
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 1.2em;
 }
