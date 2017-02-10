@@ -13,6 +13,8 @@ require 'pathname'
 
 require 'bcrypt'
 
+require 'httparty'
+
 require 'pg'
 require 'active_record'
 require 'logger'
