@@ -1,19 +1,12 @@
-<header>
-	<nav>
-		<ul>
-		  <% if !current_user %>
-		   <li><a href="/session/login">Login</a></li>
-		    <li><a href="/users/new">Registration</a></li>
-		  <% else %>
-		    <li><a href="/session/logout">Logout</a></li>
-		    <li><a href="/users/<%=@user.id%>"><%=@user.email%></a></li>
-		  <% end %>
-		</ul>
- 	</nav>
-</header>
-
 <div class="container">
-<h1>Welcome to Sinatra!</h1>
-  <p>Hello, world!</p>
-</div>
 
+<h1>ReadMyFeelings</h1>
+
+<h2> How are you feeling today? </h2>
+
+<form id="search" action="/search" method="post">
+	<input type="text" name="query">
+	<input type="submit" name="Search">
+</form>
+
+</div>
