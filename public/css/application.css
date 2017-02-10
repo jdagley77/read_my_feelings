@@ -1,0 +1,33 @@
+header{
+	background-color: yellow;
+	height:50px;
+}
+
+a{
+	color:black;
+}
+
+nav li{
+	float:right;
+	margin-right: 20px;
+	text-decoration: none;
+	list-style-type:none;
+}
+
+nav li a{
+	text-decoration: none;
+}
+
+nav li a:hover{
+	color:red;
+	border-bottom: 2px red solid;
+}
+
+.container {
+	text-align: center;
+}
+
+.home a:hover {
+	color: red;
+	border-bottom: 2px red solid;
+}

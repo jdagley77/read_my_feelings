@@ -1,0 +1,11 @@
+<h1>Login</h1>
+
+<% if @message %>
+<p><%= @message %> </p>
+<% end %>
+
+<form method="POST" action="/session/login">
+  <input type="email" name="user[email]" placeholder="Email">
+  <input type="password" name="user[password]" placeholder="Password">
+  <input type="submit" name="Login" >
+</form>

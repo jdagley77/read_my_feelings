@@ -1,0 +1,19 @@
+<header>
+	<nav>
+		<ul>
+		  <% if !current_user %>
+		   <li><a href="/session/login">Login</a></li>
+		    <li><a href="/users/new">Registration</a></li>
+		  <% else %>
+		    <li><a href="/session/logout">Logout</a></li>
+		    <li><a href="/users/<%=@user.id%>"><%=@user.email%></a></li>
+		  <% end %>
+		</ul>
+ 	</nav>
+</header>
+
+<div class="container">
+<h1>Welcome to Sinatra!</h1>
+  <p>Hello, world!</p>
+</div>
+
