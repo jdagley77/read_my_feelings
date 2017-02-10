@@ -1,5 +1,11 @@
-<% @book_names.each do |book_img| %>
+<!-- i couldnt display each item in the same group because i was using a .each and 
+passing in each item in the pipes. got around it by using .index. since each list is the same
+number of results, i could use .length.times to display them as a group. -->
+
+<% @book_names.length.times do |index| %>
 	<ul>
-	<li><a href="<%= book_img %>"> book </a></li>
+	<li class="no_bullet"><img src="<%= @book_names[index] %>"></li>
+	<li><%= @book_titles[index] %></li>
+	<li><%= @book_authors[index] %></a></li>
 	</ul>
 <% end %>

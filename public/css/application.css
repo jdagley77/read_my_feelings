@@ -31,3 +31,7 @@ nav li a:hover{
 	color: red;
 	border-bottom: 2px red solid;
 }
+
+.no_bullet {
+	list-style-type: none;
+}
