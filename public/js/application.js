@@ -16,8 +16,8 @@ var good_reads = function() {
 			data: data
 		})		
 		.done(function(res){
-			$link.append(res);
-			$link.val('');
+			$('#result_container').html(res);
+			$link.trigger("reset");
 		})
 	})
 
